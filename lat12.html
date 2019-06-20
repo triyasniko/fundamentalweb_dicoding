@@ -70,6 +70,29 @@
         .menu ul li:hover ul.submenu{
             display: block;
         }
+        .jumbotron{
+            width: 100%;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+            background-color: #aaa;
+            background-image: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+            background-size: cover;
+            position: relative;
+        }
+        .overlay{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.4;
+        }
+        .jumbotron h2, .jumbotron p{
+            position: relative;
+        }
     </style>
 </head>
 <body>
@@ -92,6 +115,14 @@
                     <li><a href="#">Kontak</a></li>
                 </ul>
             </div>
+        </div>
+        <div class="jumbotron">
+            <div class="overlay"></div>
+            <h1>Welcome everybody</h1>
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Architecto distinctio 
+                exercitationem doloremque non vero, 
+                repellendus illum perspiciatis facere culpa sint!</p>
         </div>
         <div class="content">
             <h2>Our Produk</h2>
