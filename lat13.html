@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML dasar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        li:nth-child(2){
+            background-color: yellow;
+            transform: rotateZ(30deg);
+            text-align: center;
+        }
+        li:first-child{
+            background: linear-gradient(to bottom,yellow,red);
+        }
+        img{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <ul contenteditable="true">
+        <li>Nasi</li>
+        <li>Sate</li>
+        <li>Sayuran</li>
+    </ul>
+    <img src="logo.png" alt="logo">
+    <figure>ini caption</figure>
+
+    <form action="/action_page.php">
+        Nama: <input type="text" name="nama" placeholder="Donald"><br><br>
+        Email: <input type="email" name="email" placeholder="mail@domain.com"><br><br
+        >
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
