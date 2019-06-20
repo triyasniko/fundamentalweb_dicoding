@@ -23,6 +23,7 @@
         }
         .menu ul li{
             display: inline-block;
+            position: relative;
         }
         .menu ul li a{
             padding: 10px 20px;
@@ -50,6 +51,25 @@
         .thumbnail img{
             width: 100%;
         }
+        ul .submenu{
+            background-color: #eee;
+            border: 1px solid #ccc;
+            text-align: left;
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            display: none;
+        }
+        ul .submenu li{
+            display: block;
+        }
+        ul.submenu li a{
+            display: block;
+            padding: 5px 10px;
+        }
+        .menu ul li:hover ul.submenu{
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -61,7 +81,14 @@
             <div class="menu">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li>
+                        <a href="#">About</a>
+                        <ul class="submenu">
+                            <li><a href="#">CV</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Kontak</a></li>
                 </ul>
             </div>
