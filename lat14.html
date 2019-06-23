@@ -9,19 +9,17 @@
 </head>
 <body>
     <p id="paragraf"></p>
-    <p id="para2"></p>
     <script>
-        // utk melihat hasilnya klik kanan pada browser, inspect elemen lihat bagian console
-        const pi=3.14;
-        const umur=30;
-        // silahkan coba ubah nilai umur maka akan muncul error
-        // umur=45;
+        var nilai1=30;
+        var nilai2=40;
+        var nilai3=39;
+        var nilai4=50;
+        var hasil=nilai1+nilai2+nilai3+nilai4;
+        var akhir=hasil%2;
 
-        // cara output js
-        paragraf.innerHTML=pi;
-        // error karena constanta nilainya bersifat permanen, jadi
-        // tidak bisa diubah
-        // console.log (umur);
+        window.alert(hasil);
+        paragraf.innerHTML=akhir;
+
         
     </script>
 </body>
