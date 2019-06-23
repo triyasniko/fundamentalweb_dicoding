@@ -9,25 +9,19 @@
 </head>
 <body>
     <p id="paragraf"></p>
+    <p id="para2"></p>
     <script>
         // utk melihat hasilnya klik kanan pada browser, inspect elemen lihat bagian console
-        var nama = 'coder';
-        var umur = 40;
-        var kd_ps = 59567;
-        var status = true;
-        var rumah;
-        var hutang=null;
-        var nama_anak=['anak1','anak2','anak3'];
-        var harta={'mobil':'kijang'};
+        const pi=3.14;
+        const umur=30;
+        // silahkan coba ubah nilai umur maka akan muncul error
+        // umur=45;
 
         // cara output js
-        console.log(typeof $ttl);
-        console.log(typeof nama_anak);
-        console.log(typeof harta);
-        console.log(hutang);
-        console.log(rumah);
-        document.write(typeof nama);
-        paragraf.innerHTML = typeof status;
+        paragraf.innerHTML=pi;
+        // error karena constanta nilainya bersifat permanen, jadi
+        // tidak bisa diubah
+        // console.log (umur);
         
     </script>
 </body>
