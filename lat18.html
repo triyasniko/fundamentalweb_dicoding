@@ -9,17 +9,20 @@
 </head>
 <body>
     <script>
-        var p=10;
-        var l=20;
-        var t=15;
-
-        if(t>0){
-            hasil="volumenya adl " + (p*l*t);
+        var nilai=90;
+        if(nilai>=90 && nilai<=100){
+            predikat="sangat baik";
+        }else if(nilai>=75 && nilai<=89){
+            predikat="baik";
+        }else if(nilai>=60 && nilai<=74){
+            predikat="cukup";
+        }else if(nilai>=50 && nilai<=59){
+            predikat="kurang";
         }else{
-            hasil="luasnya adl " + (p*l);
+            predikat="jelek sekali sudah belajar lagi"
         }
 
-        console.log(hasil);
+        console.log(predikat);
     </script>
 </body>
 </html>
