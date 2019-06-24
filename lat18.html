@@ -9,20 +9,22 @@
 </head>
 <body>
     <script>
-        var nilai=90;
-        if(nilai>=90 && nilai<=100){
-            predikat="sangat baik";
-        }else if(nilai>=75 && nilai<=89){
-            predikat="baik";
-        }else if(nilai>=60 && nilai<=74){
-            predikat="cukup";
-        }else if(nilai>=50 && nilai<=59){
-            predikat="kurang";
-        }else{
-            predikat="jelek sekali sudah belajar lagi"
-        }
+        var matematika=80;
+        var wawancara='A';
 
-        console.log(predikat);
+        if(matematika>60){
+            var keterangan='Lolos tes, dengan predikat ';
+            if(wawancara='A'){
+                keterangan+='Memuaskan';
+                console.log(keterangan);
+            }else if(wawancara='B'){
+                keterangan+='Cukup';
+                console.log(keterangan);
+            }else{
+                keterangan+='Tidak lolos tes';
+                console.log(keterangan);
+            }
+        }
     </script>
 </body>
 </html>
