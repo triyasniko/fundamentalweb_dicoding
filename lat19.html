@@ -9,18 +9,15 @@
 </head>
 <body>
     <script>
-        var sayuran = {};
-        sayuran['merah']='cabai';
-        sayuran['jingga']='tomat';
+        var herbivora = new Array('kambing','sapi');
+        var karnivora = new Array('harimau','serigala');
+        var omnivora = new Array('ayam','monyet');
 
-        var ibukota={
-            jateng:'semarang',
-            jabar:'bandung',
-            jatim:'surabaya'
-        }
-
-        console.log(sayuran);
-        console.log(ibukota);
+        var binatang =new Array(herbivora,karnivora,omnivora);
+        console.log('Binatang: ');
+        console.log(binatang);
+        console.log(herbivora[0]);
+        console.log(binatang[0]);
 
     </script>
 </body>
