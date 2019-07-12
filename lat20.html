@@ -8,10 +8,11 @@
 </head>
 <body>
     <script>
-        var x;
-        for(x=5;x>=1;x--){
-            console.log("Nomor : "+x);
-        }
+        var warna=new Array('merah','jingga','kuning');
+        var warnabalik=warna.reverse();
+        warnabalik.forEach(function(value){
+            console.log('berwarna '+value);
+        });
     </script>
 </body>
 </html>
