@@ -8,12 +8,35 @@
 </head>
 <body>  
     <script>
-        function ucapan(){
-            return console.log("Hello world");
+        // contoh yang ada dibawah ini tdak akan ada outputnya..
+        // karena pengaksesan variabel yang beda alam xD
+
+        // cth 1 perbedaan ruang lingkup variabel membuatnya tdak
+        // bisa diakses 
+        // akses variabel dalam function
+        // function ucapan(){
+        //     var cetak="hello world";
+        //     console.log(cetak);
+        // }
+        // console.log(cetak);
+
+        // cth2 akses variabel diluar function dari dalam function
+        var cetak="Hello World";
+        function print(){
+            console.log(cetak);
         }
 
-        ucapan();
+        print();
 
+        var x; 
+        function kuadrat(){
+            x*=x;
+
+        }
+        x=5;
+        console.log(x);
+        kuadrat();
+        console.log(x);
     </script>
 </body>
 </html>
