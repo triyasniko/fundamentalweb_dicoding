@@ -8,35 +8,24 @@
 </head>
 <body>  
     <script>
-        // contoh yang ada dibawah ini tdak akan ada outputnya..
-        // karena pengaksesan variabel yang beda alam xD
-
-        // cth 1 perbedaan ruang lingkup variabel membuatnya tdak
-        // bisa diakses 
-        // akses variabel dalam function
-        // function ucapan(){
-        //     var cetak="hello world";
-        //     console.log(cetak);
-        // }
-        // console.log(cetak);
-
-        // cth2 akses variabel diluar function dari dalam function
-        var cetak="Hello World";
-        function print(){
-            console.log(cetak);
+        function cetak(kata){
+            console.log("Welcome "+kata);
         }
+        cetak("joni");
 
-        print();
+        cetak("Halo");
+        var username="joko";
+        cetak(username);
 
-        var x; 
-        function kuadrat(){
-            x*=x;
-
+        function profil(nama,kota,tahun){
+            console.log("namaa " +nama);
+            console.log('asal '+kota);
+            console.log("tahun lahir "+tahun);
         }
-        x=5;
-        console.log(x);
-        kuadrat();
-        console.log(x);
+        var nama="budi";
+        var asal="medan";
+        profil(nama,asal);
+        profil("coder","semarang","1990");
     </script>
 </body>
 </html>
