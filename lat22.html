@@ -8,13 +8,12 @@
 </head>
 <body>
     <script>
-        var url = 'codepolitan.com/interactive-coding/javascript/output';
-        var segmen = url.split('/');
-        console.log(segmen);
-        
-        var tags = new Array('javascript', 'belajar javascript', 'tutorial javascript');
-        var tag_str = tags.join(", ");
-        console.log(tag_str + '<br/>');
+        var nama = ' Al Khawarizmi';
+        console.log(nama + '<br/>');
+        console.log('Sebelum menghapus karakter depan dan belakang, panjang string var nama: ' + nama.length);
+        nama = nama.trim();
+        console.log(nama + '<br/>');
+        console.log('Setelah menghapus karakter depan dan belakang, panjang string var nama: ' + nama.length);
     </script>
 </body>
 </html>
