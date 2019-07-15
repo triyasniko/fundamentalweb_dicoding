@@ -8,19 +8,14 @@
 </head>
 <body>  
     <script>
-        function cetakPesan(nama, bahasa='id')
+        function kuadrat(angka)
         {
-            var pesan = 'Selamat datang, ' + nama;
-            if(bahasa == 'en')
-            {
-                pesan = 'Welcome, ' + nama;
-            }else{
-                pesan = 'bahasa tdak terdaftar';
-            }
-            console.log(pesan);
+            angka.key *= angka.key;
         }
-        var nama = 'Bambang';
-        cetakPesan(nama,'en');
+        var x = {key:5};
+        console.log('sebelum dikuadratkan: ' + x['key']);
+        kuadrat(x);
+        console.log('setelah dikuadratkan: ' + x['key']);
     </script>
 </body>
 </html>
