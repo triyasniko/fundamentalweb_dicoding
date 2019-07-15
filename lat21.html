@@ -8,24 +8,19 @@
 </head>
 <body>  
     <script>
-        function cetak(kata){
-            console.log("Welcome "+kata);
+        function cetakPesan(nama, bahasa='id')
+        {
+            var pesan = 'Selamat datang, ' + nama;
+            if(bahasa == 'en')
+            {
+                pesan = 'Welcome, ' + nama;
+            }else{
+                pesan = 'bahasa tdak terdaftar';
+            }
+            console.log(pesan);
         }
-        cetak("joni");
-
-        cetak("Halo");
-        var username="joko";
-        cetak(username);
-
-        function profil(nama,kota,tahun){
-            console.log("namaa " +nama);
-            console.log('asal '+kota);
-            console.log("tahun lahir "+tahun);
-        }
-        var nama="budi";
-        var asal="medan";
-        profil(nama,asal);
-        profil("coder","semarang","1990");
+        var nama = 'Bambang';
+        cetakPesan(nama,'en');
     </script>
 </body>
 </html>
